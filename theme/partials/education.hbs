@@ -1,14 +1,14 @@
 {{#if resume.education.length}}
 <section class="section">
   <header>
-    <h2 class='section-title'>Education <span class="item-count">({{resume.education.length}})</span></h2>
+    <h2 class='section-title'>Formation <span class="item-count">({{resume.education.length}})</span></h2>
   </header>
 
   <section id="education">
     {{#each resume.education}}
     <section class="education-item">
       {{#if summary}}
-        <label for="education-item-{{@index}}"></label>
+      <label for="education-item-{{@index}}"></label>
       {{/if}}
       <header class="clear">
         <div class="header-left">
@@ -31,16 +31,16 @@
         <div class="date">
           {{#if startDate}}
           <span class="startDate">
-          {{Y startDate}}
+            {{Y startDate}}
           </span>
           {{/if}}
           {{#if endDate}}
           <span class="endDate">
-          - {{Y endDate}}
+            - {{Y endDate}}
           </span>
           {{else}}
           <span class="endDate">
-          - Current
+            - Current
           </span>
           {{/if}}
         </div>
@@ -76,7 +76,7 @@
         </div>
         {{/if}}
         {{#if summary}}
-          <div class="summary">{{paragraphSplit summary}}</div>
+        <div class="summary">{{paragraphSplit summary}}</div>
         {{/if}}
       </div>
     </section>
